@@ -1,39 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora JS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
-    <div class="calculadora">
-        <input type="text" id="display" disabled>
-        <div class="botoes">
-            <button onclick="limpar()">C</button>
-            <button onclick="adicionar('/')">÷</button>
-            <button onclick="adicionar('*')">×</button>
+    <main>
+        <section>
 
-            <button onclick="adicionar('7')">7</button>
-            <button onclick="adicionar('8')">8</button>
-            <button onclick="adicionar('9')">9</button>
-            
-            <button onclick="adicionar('4')">4</button>
-            <button onclick="adicionar('5')">5</button>
-            <button onclick="adicionar('6')">6</button>
-            
-            <button onclick="adicionar('1')">1</button>
-            <button onclick="adicionar('2')">2</button>
-            <button onclick="adicionar('3')">3</button>
-            <button onclick="adicionar('-')">−</button>
+            <header>
+                <div class="title">Calculator</div>
+                <div class="actions">
+                    <div class="box">
+                        <img class="minimize" src="assets/icons/subtract-vector.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="assets/icons/maximize-vecto.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="close" src="assets/icons/close-vector.svg" alt="">
+                    </div>
+                </div>
+            </header>
 
-            <button onclick="adicionar('0')">0</button>
-            <button onclick="adicionar('.')">.</button>
-            
-            <button onclick="calcular()">=</button>
-            <button onclick="adicionar('+')">+</button>
+            <nav>
+                <div class="container">
+                    <div class="box-menu">
+                        <img src="assets/icons/menu-vector.svg" alt="">
+                    </div>
+                    <p>
+                        Standard
+                    </p>
+                    <div class="box-pop-out">
+                        <img src="assets/icons/pop-up-vector.svg" alt="">
+                    </div>
+                </div>
+                <div class="box-history">
+                    <img src="assets/icons/history-vector.svg" alt="">
+                </div>
+            </nav>
+
+            <div class="display">
+                <p class="operating"></p>
+                <div class="container-input">
+                    <p class="input">0</p>
+                </div>
+            </div>
+
+            <div class="memory">
+                <div class="box-memory">
+                    <p>MC</p>
+                    <p>MR</p>
+                    <p>M+</p>
+                    <p>M-</p>
+                    <p>MS</p>
+                    <p>M*</p>
+                </div>
+            </div>
+
+            <div class="operators">
+                <div class="buttons">
+                
+                    <button class="operator">%</button>
+                    <button class="clearLast">CE</button>
+                    <button class="clearAll">C</button>
+                    <button class="backspace"><img src="assets/icons/backspace.svg" alt=""></button>
+
+                    <button>1/x</button>
+                    <button>x²</button>
+                    <button>V</button>
+
+                    <button class="operator divider">/</button>
+
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+
+                    <button class="operator multiplay">x</button>
+
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+
+                    <button class="operator minus">-</button>
+
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+
+                    <button class="operator plus">+</button>
+
+                    <button>+/-</button>
+                    <button class="number">0</button>
+
+                    <button class="number">.</button>
+                    <button class="equal">=</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="shortcut">
+            <div class="item">
+                <img src="assets/favicon-16x16.png" alt="">
+            </div>
+            <p>Calculator</p>
         </div>
-    </div>
-    <script src="script.js"></script>
+
+    </main>
 </body>
 </html>
